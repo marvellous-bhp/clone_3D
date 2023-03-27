@@ -9,7 +9,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="description" content="Interactive 3D walkthrough">
 
-  <link rel="icon" href="https://cdn0.shapespark.com/showcase/galerija_filantropija_by_hotelphotographers/v1/favicon.ico">
+  <link rel="icon" href="./showcase/galerija_filantropija_by_hotelphotographers/v1/favicon.ico">
 
   <meta property="og:image" content="https://cdn0.shapespark.com/showcase/galerija_filantropija_by_hotelphotographers/v1/thumbnail.jpg" />
 
@@ -21,8 +21,8 @@
       font-style: normal;
       font-weight: 400;
       src: local('Open Sans'), local('OpenSans'),
-      url('https://cdn0.shapespark.com/webwalk/v418/font/open-sans-v28-vietnamese_latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url('https://cdn0.shapespark.com/webwalk/v418/font/open-sans-v28-vietnamese_latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('./webwalk/v418/font/open-sans-v28-vietnamese_latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./webwalk/v418/font/open-sans-v28-vietnamese_latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     /* Original font awesome font-family names have been replaced to not rely on
@@ -42,8 +42,8 @@
 
     @font-face {
       font-family: 'FontAwesomeSolid';
-      src: url("https://cdn0.shapespark.com/webwalk/v418/font/fa-solid-900.woff2") format("woff2"),
-           url("https://cdn0.shapespark.com/webwalk/v418/font/fa-solid-900.woff") format("woff"); }
+      src: url("./webwalk/v418/font/fa-solid-900.woff2") format("woff2"),
+           url("./webwalk/v418/font/fa-solid-900.woff") format("woff"); }
 
     #cover-image {
       background-image: url("./showcase/galerija_filantropija_by_hotelphotographers/v1/cover.jpg");
@@ -174,7 +174,7 @@
   <div id="minimap-container" class="minimap-container-default" style="display: none">
     <div id="minimap-wrapper" class="minimap-wrapper-default">
       <div id="minimap-button-close" class="minimap-button minimap-button-close">
-        <img src="https://cdn0.shapespark.com/webwalk/v418/img/close.svg">
+        <img src="./webwalk/v418/img/close.svg">
       </div>
       <div id="minimap-button-minimize" class="minimap-button minimap-button-minimize">
         <img src="./webwalk/v418/img/minimize.svg">
@@ -212,7 +212,7 @@
     <div id="desktop-help" class="help ui-panel" style="display: none">
       <img id="close-desktop-help-button"
            class="close-help-button ui-close-hoverable"
-           src="https://cdn0.shapespark.com/webwalk/v418/img/close.svg">
+           src="./webwalk/v418/img/close.svg">
       <div id="desktop-help-switch">
         <div data-strings="help.basic" id="basic-desktop-help-option">
         </div><!-- NS = no spaces
@@ -230,7 +230,7 @@
        --><div class="help-column3-sep"></div><!-- NS
        --><div class="help-column3">
             <h1 data-strings="help.keyboard"></h1>
-            <img src="https://cdn0.shapespark.com/webwalk/v418/img/keyboard-controls.svg">
+            <img src="./webwalk/v418/img/keyboard-controls.svg">
           </div><!-- NS
        --><div class="help-column3-sep"></div><!-- NS
        --><div class="help-column3">
@@ -346,7 +346,7 @@
          style="display: none">
       <img id="close-mobile-help-button"
            class="close-help-button ui-close-hoverable"
-           src="https://cdn0.shapespark.com/webwalk/v418/img/close.svg">
+           src="./webwalk/v418/img/close.svg">
       <div class="help-columns">
         <div class="help-column2">
           <h1 data-strings="help.touch"></h1>
@@ -355,7 +355,7 @@
      --><div class="help-column2-sep"></div><!-- NS
      --><div class="navigation-help-column2">
           <h1 data-strings="help.vrTeleport"></h1>
-          <img src="https://cdn0.shapespark.com/webwalk/v418/img/vr-controls.svg">
+          <img src="./webwalk/v418/img/vr-controls.svg">
         </div>
       </div>
     </div>
@@ -426,13 +426,14 @@
       </div>
     </div>
     <div id="ext-meeting-who-list-folder" class="ui-folder-vertical ui-hoverable ui-panel">
-      <img src="https://cdn0.shapespark.com/webwalk/v418/img/fold-vertical.svg">
+      <img src="./webwalk/v418/img/fold-vertical.svg">
     </div>
   </div>
   <div id="ext-meeting-camera-preview" style="display: none"></div>
   <script type="text/javascript">
     window.onload = function() {
       WALK.ASSETS_URL = 'https://cdn0.shapespark.com/showcase/galerija_filantropija_by_hotelphotographers/v1/';
+      // WALK.ASSETS_URL = './showcase/galerija_filantropija_by_hotelphotographers/v1/';
       var config = new WALK.SceneLoadConfig();
       WALK.init(config);
     }
